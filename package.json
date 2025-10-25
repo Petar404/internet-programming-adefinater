@@ -1,0 +1,16 @@
+{
+  "name": "internet-programming-exam",
+  "version": "1.0.0",
+  "description": "Internet Programming Exam - Doctor Who Episodes Explorer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["exam", "javascript", "web"],
+  "author": "Wekoslav Stefanovski",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

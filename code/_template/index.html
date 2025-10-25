@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Who Episodes Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Doctor Who Episodes Explorer</h1>
+            <p>Explore the adventures through time and space</p>
+        </header>
+
+        <section class="filters">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <label for="name-filter">Episode Name:</label>
+                <input type="text" id="name-filter" placeholder="Search episodes...">
+            </div>
+            <div class="filter-group">
+                <label for="era-filter">Era:</label>
+                <select id="era-filter">
+                    <option value="">All Eras</option>
+                    <option value="Classic">Classic</option>
+                    <option value="Modern">Modern</option>
+                    <option value="Recent">Recent</option>
+                </select>
+            </div>
+            <!-- Add more filters as needed -->
+        </section>
+
+        <section class="episodes">
+            <h2>Episodes</h2>
+            <div id="loading">Loading episodes...</div>
+            <div id="error" style="display: none;"></div>
+            <table id="episodes-table" style="display: none;">
+                <thead>
+                    <tr>
+                        <th data-sort="rank">Rank</th>
+                        <th data-sort="title">Title</th>
+                        <th data-sort="series">Series</th>
+                        <th data-sort="era">Era</th>
+                        <th data-sort="broadcast_date">Year</th>
+                        <th data-sort="director">Director</th>
+                        <th data-sort="writer">Writer</th>
+                        <th data-sort="doctor">Doctor</th>
+                        <th data-sort="companion">Companion</th>
+                        <th data-sort="cast">Cast</th>
+                    </tr>
+                </thead>
+                <tbody id="episodes-body">
+                    <!-- Episodes will be inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
